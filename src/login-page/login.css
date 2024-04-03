@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --black-color: #000000;
+    --white-color: #fff;
+    --bg-color: #6DDFE3;
+    --main-color: #042A2B;
+    --accent-color: #D4AA4A;
+    --second-color: #14686B;
+
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    
+}
+
+.login-body{
+    height: 500px;
+    width: 500px;
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;      
+    
+}
+
+.upper-part{
+    width: 100%;
+    padding: 5% 6%;
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    margin-bottom: 30px;
+     
+    
+}
+
+.upper-part h2{
+    font-weight: 200;
+    color: var(--main-color)
+
+}
+
+.upper-part a i{
+    font-size: 2rem;
+    color: var(--main-color)
+    
+}
+
+.form-part{
+    position: relative;
+    padding: 10% 5%;
+    height: 60%;
+    width: 70%;    
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;  
+    margin-bottom: 30px;
+    top: -60px;
+    
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    position: relative;
+    
+}
+
+.input label{
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--second-color);
+    
+}
+
+.input input{
+    height: 2rem;
+    border: none;
+    border-bottom: solid 1px var(--second-color);
+    background-color: transparent;
+    transition: ease all .55s;
+    
+}
+
+.input input:focus{
+    outline: none;
+    border-bottom: solid 1px var(--accent-color);
+}
+
+.check-part{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.check-part label{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 7px;
+    color: var(--second-color);
+}
+
+.check-part label input{
+    width: 15px;
+    height: 15px;  
+    position: absolute;     
+    left: 0;
+    visibility: hidden;
+    accent-color: var(--second-color);
+    opacity: 0.6;    
+    
+}
+
+.checkbox{
+    width: 15px;
+    height: 15px;
+    border: solid 1px var(--second-color);
+    opacity: 0.5;
+    background-color: transparent;
+    cursor: pointer;
+    transition: ease all .2s;
+    
+}
+
+.checkbox:hover{
+    background-color: hsl(182, 69%, 25%, .4);       
+}
+
+
+.submit-btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.create-acc{
+    width: 100%;
+    
+}
+
+.create-acc button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.forgot{
+    position: relative;
+    bottom: 100px;
+}
+
+.forgot a {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: var(--second-color);
+
+}
+
+
+
