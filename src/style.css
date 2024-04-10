@@ -16,7 +16,9 @@
 }
 
 body{
+    min-height: 100vh;
     background-color: var(--bg-color);
+    
 }
 
 .top-bar{
@@ -45,17 +47,19 @@ body{
 }
 
 .nav-bar ul li{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     list-style: none;
     cursor: pointer;
     color: var(--main-color);
     transition: all ease .20s;
+    position: relative;
+    z-index: 1;
 }
 
 .nav-bar ul li:hover{
-    font-size: 1.13rem;
-    color: var(--second-color);
+    font-size: 1.33rem;
+    color: var(--second-color);    
 }
 
 .nav-bar ul li.active{
@@ -69,22 +73,25 @@ body{
 }
 
 .login-btn button{
-    padding: 8px 30px;
+    padding: 12px 35px;
     border-radius: 15px;
     border: none;
     background-color: var(--accent-color);
     color: var(--white-color);
     font-weight: 500;
-    font-size: 0.9rem;    
+    font-size: 1.2rem;    
     letter-spacing: 2px;
     transition: all ease .3s;
+    position: relative;
+    z-index: 1;    
+    cursor: pointer;
 }
 
-.login-btn button:hover{
+.login-btn button:hover {
     background-color: #c09a43;
 }
 
-.info-sides{
+.info-sides{    
     width: 100%;
     display: flex;
     align-items: center;
@@ -92,7 +99,7 @@ body{
     
 }
 
-.right-side{
+.right-side{    
     width: 50%;
     display: flex;
     align-items: center;
@@ -100,13 +107,22 @@ body{
     flex-direction: column;
     position: relative;
     bottom: 200px;    
+    
 }
 
-.right-side img {
+.right-side img {    
+    height: 900px;
+    overflow: hidden;       
     
-    height: 1200px;
-    overflow: hidden;
 } 
+
+.right-side a{
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 120px;
+    left: 250px;    
+    color: var(--black-color);
+}
 
 .left-side{
     width: 50%;
@@ -115,13 +131,14 @@ body{
     justify-content: center;
     flex-direction: column;
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
     left: 100px;    
+   
 }
 
 #title{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 20px;        
 }
@@ -133,7 +150,7 @@ body{
 
 .left-side h3{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin-bottom: 30px;
 }
 
@@ -141,7 +158,7 @@ body{
     display: flex;    
     justify-content: center;
     align-items: center;
-    gap: 135px;
+    gap: 160px;
 }
 
 .join-btn{
@@ -150,8 +167,15 @@ body{
     border: none;
     border-radius: 5px;
     color: var(--white-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.join-btn:hover{
+    background-color: #c09a43
+
 }
 
 .video-sec{
@@ -159,26 +183,53 @@ body{
     align-items: center;
     justify-content: center;    
     gap: 10px;
-    padding: 5px 15px;
+    padding: 8px 20px;
     border: solid 1px rgba(31, 31, 31, 0.3);    
     border-radius: 10px;
-    cursor: pointer;    
+    cursor: pointer;       
     
 }
 
 .play-btn{
-    font-size: 1rem;
-    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 5px 5px;
     background-color: var(--accent-color);
     border: none;
     color: var(--white-color);
     border-radius: 20px;
     cursor: pointer;
-
+    
 }
 
 .video-sec span{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;    
 }
 
+.social-icons{
+    margin-top: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social-icons a i{
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 15px;    
+    background-color: var(--second-color);
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0, .5) 0px 20px 40px -10px;
+    transition: all ease .5s;
+
+}
+
+.social-icons a i:hover{
+    background-color: var(--main-color);
+}

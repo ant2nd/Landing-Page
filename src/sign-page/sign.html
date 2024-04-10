@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sign.css" />
+  </head>
+  <body>
+    <main class="sign-body">
+      <section class="left-side">
+        <img
+          src="/src/images/welcome2.png"
+          alt="welcome image"
+          style="width: 400px"
+        />
+      </section>
+
+      <section class="right-side">
+        <div class="title">
+          <h1>Sign Up</h1>
+          <p>Already have an account?<a href="/src/login-page/login.html">Log in</a></p>
+        </div>
+
+        <div class="full-form">
+          <form>
+            <div class="input">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                placeholder="Username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="useremail">Email</label>
+              <input
+                type="email"
+                placeholder="Email"
+                name="useremail"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="password-confirm">Confirm Password</label>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                name="password-confirm"
+                required
+              />
+            </div>
+
+            <button class="form-btn">Create account</button>
+          </form>
+
+          <div>
+            <p>
+              By click "Create account" you ackowlodge that you have read and
+              accept the <a href="#">Terms of service </a> and
+              <a href="#">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
